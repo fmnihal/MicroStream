@@ -17,19 +17,19 @@ public class MovieInfoController {
     @Autowired
     private MovieInfoRepository repository;
 
-    @PostMapping("/movie-info/save")
+    @PostMapping("/save")
     public List<MovieInfo> saveAll(@RequestBody List<MovieInfo> movieInfoList) {
         return repository.saveAll(movieInfoList);
     }
 
-    @GetMapping("/movie-info/list")
+    @GetMapping("/list")
     public List<MovieInfo> getAll() {
         return repository.findAll();
     }
 
-    @GetMapping("/movie-info/find-path-by-id/{movieInfoId}")
-    public String findPathById(@PathVariable Long movieInfoId) {
-        var videoInfoOptional = repository.findById(movieInfoId);
-        return videoInfoOptional.map(MovieInfo::getPath).orElse(null);
-    }
+    // @GetMapping("/find-path-by-id/{movieInfoId}")
+    // public String findPathById(@PathVariable Long movieInfoId) {
+    //     var videoInfoOptional = repository.findById(movieInfoId);
+    //     return videoInfoOptional.map(MovieInfo::getPath).orElse(null);
+    // }
 }

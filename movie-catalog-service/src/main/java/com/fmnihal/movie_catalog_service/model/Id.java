@@ -1,0 +1,5 @@
+package com.fmnihal.movie_catalog_service.model;
+
+public @interface Id {
+
+}
