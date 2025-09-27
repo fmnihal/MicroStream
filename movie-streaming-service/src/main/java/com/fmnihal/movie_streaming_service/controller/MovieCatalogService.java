@@ -1,4 +1,4 @@
-package com.fmnihal.moviestreamingservice.controller;
+package com.fmnihal.movie_streaming_service.controller;
 
 import com.netflix.discovery.converters.Auto;
 import org.springframework.beans.factory.annotation.Autowired;
