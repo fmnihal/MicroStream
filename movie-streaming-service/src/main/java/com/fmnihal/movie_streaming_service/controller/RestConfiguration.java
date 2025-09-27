@@ -1,4 +1,5 @@
-package com.fmnihal.moviestreamingservice.controller;
+// package com.fmnihal.moviestreamingservice.controller;
+package com.fmnihal.movie_streaming_service.controller;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

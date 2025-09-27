@@ -1,13 +1,17 @@
 package com.fmnihal.movie_catalog_service.controller;
 
-import com.genuinecoder.moviecatalogservice.model.MovieInfo;
-import com.genuinecoder.moviecatalogservice.model.MovieInfoRepository;
+import com.fmnihal.movie_catalog_service.model.MovieInfo;
+import com.fmnihal.movie_catalog_service.model.MovieInfoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
+
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
+@RequestMapping("/movie-info")
 public class MovieInfoController {
 
     @Autowired
