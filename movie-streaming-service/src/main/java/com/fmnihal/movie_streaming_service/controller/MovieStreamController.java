@@ -18,7 +18,7 @@ import java.util.logging.Logger;
 public class MovieStreamController {
 
     public static final Logger log = Logger.getLogger(MovieStreamController.class.getName());
-    public static final String VIDEO_DIRECTORY = "F:\\Stream\\";
+    public static final String VIDEO_DIRECTORY = "D:\\YT Videos\\C Sharp Local Playlist\\";
 
     @Autowired
     private MovieCatalogService movieCatalogService;
